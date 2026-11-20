@@ -1,0 +1,4 @@
+comparison,n_units,n_clusters,mean_a,mean_b,mean_diff,ci_low,ci_high,hl,n_better,n_worse,p,hypothesis,role,tested,passed,mcid_reached,ci_method,boot_ci_low,boot_ci_high,boot_note,noninferior
+H1 RAS vs baseline：retouch_cirrus+retouch_spectralis+retouch_topcon IRF Dice（volume）,55,55.0,0.37658927681193666,0.29531247016701256,0.08127680664492419,0.06493224359644155,0.09807675547286836,0.07370205902159879,52.0,2.0,2.8452397608882486e-10,H1,主要,True,True,True,,,,,
+H2 RAS vs baseline：静默失败率（volume）,55,55.0,0.309128078351583,0.31745421450164046,-0.0083261361500574,-0.046395531641533753,0.03370124079061715,-0.023031288538807322,17.0,33.0,0.0797582495654358,H2,次要（H1 成立才判定）,True,False,,,,,,
+H3 RAS − baseline：TowardPi 第 0 折眼 IRF Dice 非劣效（界值 −0.03）,9,,0.8180406326069548,0.809720803214521,0.008319829392433772,0.0001884569450408078,0.016451201839826735,,,,,H3,次要（H2 成立才判定）,False,,,t（按眼）,0.0022660988628807055,0.01746864595048047,B-scan 级、以眼聚类 bootstrap（敏感性）,True
