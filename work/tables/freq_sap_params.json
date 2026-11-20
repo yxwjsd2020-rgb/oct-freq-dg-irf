@@ -1,0 +1,7 @@
+{
+  "UNIT": "volume",
+  "MCID": 0.05,
+  "NI_MARGIN": 0.03,
+  "PRIMARY": "retouch",
+  "LOCAL_CONFIRMATORY": false
+}
