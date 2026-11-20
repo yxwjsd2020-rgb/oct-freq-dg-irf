@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "oct-freq-dg-irf: code, frozen-file hashes and aggregate results for frequency-domain augmentation in cross-device OCT intraretinal fluid segmentation"
+type: software
+authors:
+  - family-names: Yang
+    given-names: Xiaowei
+    affiliation: "Shanxi Provincial People's Hospital"
+  - family-names: Yue
+    given-names: Guang
+    affiliation: "Taiyuan Institute of Technology"
+  - family-names: Zhou
+    given-names: Guohong
+    affiliation: "Shanxi Eye Hospital Affiliated to Shanxi Medical University"
+license: MIT
+repository-code: "https://github.com/yxwjsd2020-rgb/oct-freq-dg-irf"
+abstract: "Code, frozen-file SHA-256 hashes and aggregate results for a preregistered study (OSF: https://osf.io/peums) of frequency-domain augmentation for cross-device OCT intraretinal fluid segmentation with nnU-Net v2. No patient images are included."
+keywords:
+  - optical coherence tomography
+  - intraretinal fluid
+  - domain generalization
+  - frequency-domain augmentation
+  - nnU-Net
+version: 1.0.1
+date-released: "2026-11-20"
