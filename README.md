@@ -5,7 +5,7 @@ Code, frozen-file hashes and trained model weights for the preregistered study:
 > X. Yang, G. Yue, G. Zhou. Frequency-domain augmentation for cross-device intraretinal fluid segmentation on optical coherence tomography: a preregistered single-source study. *Submitted to Biomedical Signal Processing and Control*, 2026.
 
 - Preregistration: Open Science Framework, [osf.io/peums](https://osf.io/peums) (registered 12 November 2026; embargoed until 28 February 2027).
-- Archived release: Zenodo, DOI_PLACEHOLDER (code) and DOI_WEIGHTS_PLACEHOLDER (weights).
+- Archived release: Zenodo, 10.5281/zenodo.24394189 (code, v1.0.1) and 10.5281/zenodo.24394329 (weights).
 
 ## What this repository contains
 
@@ -94,6 +94,15 @@ Input images must be single-channel PNG B-scans named `<case>_0000.png` and resa
 `gpu/run_freq.sh smoke | train | predict` reproduces the study pipeline; `FREQ_RUNS` selects trainers and seeds (for example `FREQ_RUNS="nnUNetTrainer_RAS:1"`). The `predict` stage asks for confirmation because, in the study, each external set was run only once.
 
 ## Model weights (Zenodo)
+
+Download all 31 files from https://doi.org/10.5281/zenodo.24394329 (30 chunks `weights_D_v1.tar.c00`–`c29` and `SHA256SUMS_c100.txt`), then:
+
+```bash
+sha256sum -c SHA256SUMS_c100.txt
+cat weights_D_v1.tar.c?? > weights_D_v1.tar
+sha256sum weights_D_v1.tar   # c035f931175b54003e7450a26e8d7946b035a189f62a76dcdd83b27b83ce4fce
+tar -xf weights_D_v1.tar
+```
 
 | Configuration | Trainer | Seeds |
 |---|---|---|
